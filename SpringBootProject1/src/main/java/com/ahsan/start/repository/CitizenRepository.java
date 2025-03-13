@@ -12,7 +12,7 @@ import com.ahsan.start.entities.CitizenClass;
 @Repository
 public interface CitizenRepository extends JpaRepository<CitizenClass,Long>{
 	
-	// here we are using dsl(dayabase standard language) which provide you ready method support all you have 
+	// here we are using DSL(database standard language) which provide you ready method support all you have 
 	// to pass columns names after "findBy" keyword and it will generate a query for you
 	public CitizenClass findByFirstNameAndLastName(String firstName,String lastName);
 	

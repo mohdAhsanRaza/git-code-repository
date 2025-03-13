@@ -36,7 +36,8 @@ public class CitizenController {
 	
 	@GetMapping("/getAllCitizen")
 	// @ResponseBody use to get response in json object and we can use consumes and 
-	// produces too for getting response in json object
+	// produces too for getting 
+	// response in json object
 	@ResponseBody()
 	public List<CitizenClass> getListOfAllCitizens(){
 		List<CitizenClass> listCitizenClasses=citizenServiceImpl.getAllCitizensFromDbUSingJPARepo();
